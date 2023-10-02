@@ -1,0 +1,935 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(15, 64, 105,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    /* opacity: 0.7; */
+}
+.header img{
+    float: left;
+    margin-left: 50px;
+    margin-top: 3px;
+}
+
+.headerlist1{
+    list-style: none;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.headerlist2{
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+
+}
+
+.header li{
+    display: inline;
+    margin-left: 20px;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* //////////////////////////////////////// we are Section ///////////////////////////////////*/
+
+.we-are{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/we\ are\ bakgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
+}
+
+.hero{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+}
+.we-aretittle{
+    color: white;
+    font-size: 60px;
+}
+
+.we-arep{
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.we-arebtn1{
+    background-color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(36, 78, 112);
+}
+
+
+.we-arebtn2:hover{
+
+    background-color: white;
+    color: rgb(36, 78, 112);
+    font-size: 25px;
+    
+}
+
+.we-arebtn1:hover{
+
+    background-color: rgb(36, 78, 112);
+    color: antiquewhite;
+    font-size: 25px;    
+}
+
+.we-are-overlay{
+    height: 100%;
+    width: 75%;
+    background-color: rgba(36, 78, 112,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+/* ////////////////// Welcome Section ////////////////////////////////////////////// */
+
+.welcomeh2{
+    font-size: 50px;
+    color: rgb(36, 78, 112);
+    
+    }
+    .linewelcome{
+        margin: auto;
+        height: 6px;
+        width: 100px;
+        background-color: rgb(15, 64, 105);
+        margin-bottom: 50px;
+    }
+    
+    .containerwelcome{
+        margin: auto;
+        width: 80%;
+        
+    }
+    
+    .welcomecontent{
+        overflow: auto;
+        text-align: center;
+        height: 100vh;
+        padding-top: 30px;
+        position: relative;
+    }
+    
+    .welcimg1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .welcimg2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+
+    .welcomeitem{
+        float: left;
+        width: 30%;
+        text-align: center;
+        color: rgb(15, 64, 105);
+        padding: 10px 5px;
+        position: relative;
+        border: 1px solid rgb(15, 64, 105);
+        padding: 20px 10px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .SD{
+        margin: 0 5%;
+    }
+    
+    .welcomeitem a{
+        text-decoration: none;
+        color: lightskyblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .welcomeitemp{
+        line-height: 0.75cm;
+        text-justify: auto;    
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .welcomeitemtittle{
+        margin: 10px 0;
+    }
+    
+    .welcomeitem i{
+        font-size: 40px
+    }
+    
+    .welcomeitem::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        background-color: rgb(149, 147, 150);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .welcomeitem:hover::after{
+    
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+
+
+/* ////////////////////// Featured Section ///////////////////////////////////////////////////// */
+
+.featuredtittle{
+    font-size: 50px;
+    margin-top: 50px;
+    color: rgb(36, 78, 112);;
+}
+.linefeatured{
+    width: 100px;
+    height: 6px;
+    background-color: rgb(36, 78, 112);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.featuredcontainer{
+    width: 80%;
+    margin: auto;
+}
+
+.featuredcontent{
+    margin: auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.featureditem{
+    float: left;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+
+.BL{
+    margin: 0 5%;
+}
+
+.featuredimg{
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.overlaytext{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.overlaytext i{
+    color: white;
+}
+
+.featuredoverlay{
+    visibility: hidden;
+    line-height: 0.65cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.featureditem:hover .featuredoverlay{
+    visibility: visible;
+    background-color: rgba(36, 78, 112,0.5);
+    /* opacity: 0.5; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* //////////////////////////////////////////// what we offer section ////////////////////////////////////// */
+
+.offertittle{
+    font-size: 50px;
+    color: rgb(36, 78, 112);
+    margin-top: 50px;
+}
+.lineoffer{
+    width: 100px;
+    height: 6px;
+    background-color: rgb(36, 78, 112);
+    margin: auto;
+    margin-bottom: 50px;
+}
+.offercontainer{
+    margin: auto;
+    width: 80%;
+}
+
+.offercontent{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    overflow: auto;
+}
+
+.offeritem{
+    float: left;
+    width: 30%;
+    text-align: left;
+    text-align: justify;
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-right: 15px;
+    border: 1px solid rgb(36, 78, 112);
+    color: rgb(36, 78, 112);
+    height: 200px;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+
+.KO{
+    margin: 0 5%;
+}
+
+.offeritem i{
+    font-size: 40px;
+    color: rgb(36, 78, 112);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.offeritemtittle{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.offeritemp{
+    line-height: 0.75cm;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.offeritem:hover{
+    color: white;
+}
+
+.offeritem:hover i{
+    color: white;
+}
+
+.offeritem::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(36, 78, 112);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.offeritem:hover::after{
+height: 100%;
+width: 100%;
+opacity: 1;
+z-index: -1;
+}
+
+
+
+/* ////////////////////////////////// why us section ////////////////////////////////////////////// */
+
+.containerwhy{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    padding-top: 75px;
+}
+
+
+.whyusitem1-title{
+    color: rgb(36, 78, 112);
+    font-size: 50px;
+
+}
+
+.linewhyus{
+    height: 6px;
+    width: 90px;
+    background-color: rgb(36, 78, 112);
+    margin-bottom: 30px;
+}
+
+.whyuscontent{
+    overflow: auto;
+    color: rgb(36, 78, 112);
+    margin-bottom: 50px;
+}
+
+.whyusp{
+    margin-bottom: 20px;
+    line-height: 0.5cm;
+}
+
+
+
+.whyusitem1{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+
+.whyusitem2{
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+
+
+.whyusitem2 li{
+    display: inline-block;
+    background-color: rgb(194, 189, 189);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whyusitem2 li:hover{
+    background-color: rgb(36, 78, 112);
+}
+
+.whyusp{
+    font-size: 18px;
+    line-height: 0.75cm;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.whyusp2{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* //////////////////////////////////////////// Award Section //////////////////////////// */
+
+.award{
+    background-image: url(../images/award\ back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    text-align: center;
+}
+.awarditem{
+    float: left;
+    width: 15vw;
+    margin-left: 8vw;
+    color: rgb(229, 220, 220);
+    text-align: center;
+    margin-top: 150px;
+}
+
+.awarditem i{
+    font-size: 40px;
+}
+
+.awardnumber{
+    font-size: 50px;
+}
+
+/* ///////////////////////////////////////////// Pricing section ///////////////////////////////// */
+
+.containerprice{
+    margin: auto;
+    width: 80%;
+}
+
+.pricecontent{
+    overflow: auto;
+    text-align: center;
+    margin-top: 50px;
+    height: 100vh;
+
+}
+.priceh{
+    font-size: 50px;
+    color: rgb(36, 78, 112);
+}
+
+.lineprice{
+    height: 6px;
+    width: 90px;
+    background-color: rgb(36, 78, 112);
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.priceitem{
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(36, 78, 112);
+    color: rgb(36, 78, 112);
+    padding: 20px 20px;
+    position: relative;
+}
+
+.PO{
+    margin: 0 5%;
+}
+
+.pricetitle{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.pricedollar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(36, 78, 112);
+    color: white;
+    margin: auto;
+    outline: 1px solid rgb(36, 78, 112);
+    outline-offset: 3px;
+    margin-bottom: 10px;
+    
+}
+.dollar{
+    font-size: 50px;
+    padding: 10px 5px 0 5px;
+}
+
+.pricep{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.75cm;
+
+}
+
+.pricebtn{
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(36, 78, 112);
+    border:0;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.priceitem:hover .dollar{
+    color: rgb(169, 152, 65);
+}
+.priceitem:hover .pricetitle{
+    color: rgb(169, 152, 65);
+}
+
+.priceitem::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+.priceitem:hover::after{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+
+/* /////////////////////////////// Manager Section /////////////////////////////// */
+
+.managercontainer{
+    background-image: url(../images/managers\ 33.webp);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.managercontent{
+    width: 80%;
+    text-align: center;
+    overflow: auto;
+    margin: auto;
+}
+
+.manager1{
+    width: 45%;
+    float: left;
+    overflow: auto;
+}
+
+.managerimg{
+    float: left;
+    margin: 40px 0px;
+    position: relative;
+    padding: 20px 120px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.manager1 img{
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.managerdetails{
+   text-transform: capitalize;
+   line-height: 1.5;
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   text-align: justify;
+}
+.managersp{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+.H{
+    margin-left: 10%;
+}
+
+/* //////////////////////////////// News Section //////////////////////////// */
+
+.newscontainer{
+    margin: auto;
+    width: 80%;
+}
+
+.newstitle{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(36, 78, 112);
+    margin-top: 50px;
+}
+.linenews{
+    width: 100px;
+    height: 6px;
+    background-color: rgb(36, 78, 112);
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.newscontet{
+    overflow: auto;
+    margin: auto;
+    text-justify: auto;
+    text-align: center;
+}
+
+.newsitem{
+    width: 30%;
+    float: left;
+    color:rgb(36, 78, 112);
+    line-height: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px 5px;
+}
+.NN{
+    margin: 0 5%;
+}
+
+.newsitem img{
+    width: 90%;
+}
+
+.nwesh{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+
+.newsa{
+    text-decoration: none;
+    color: blue;
+}
+.newsp{
+    line-height: 0.75cm;
+}
+.newssp{
+    color: rgb(36, 78, 112);
+    padding: 5px;
+
+}    
+
+.newsitem::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+
+}
+
+.newsitem:hover::after{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////////// team section /////////////////////////////////////// */
+
+.container1{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+
+}
+
+.team-content{
+    overflow: auto;
+    width: 100%;
+
+}
+
+
+.teamh{
+    font-size: 50px;
+    color: rgb(36, 78, 112);
+    text-align: center;
+}
+
+.lineteam{
+    height: 6px;
+    width: 90px;
+    background-color: rgb(36, 78, 112);
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.team-item{
+    width: 30%;
+    float: left;
+    padding: 8px 12px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.dd{
+    margin: 0 5%;
+}
+
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+
+.team-img img{
+    width: 100%;
+
+}
+
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 126, 125, 0.8);
+    visibility: hidden;
+}
+
+.team-overlay a {
+    display: block;
+    background-color: rgb(36, 78, 112);
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    margin-left: auto;
+}
+
+.team-overlay a i{
+    line-height: 40px;
+}
+
+.team-info-tittle{
+    color: rgb(36, 78, 112);
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.team-info-sp1{
+    text-transform: capitalize;
+    color: indiargb(36, 78, 112)nred;
+}
+
+.team-item:hover .team-overlay{
+visibility: visible;
+}
+
+.team-item::after{
+
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: 1s;
+    background-color: rgb(161, 163, 162);
+}
+
+.team-item:hover::after{
+
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: -1;
+}
+
+
+
+
+
+
+/* //////////////////////////////// Social Media Section //////////////////////// */
+
+.social{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(36, 78, 112);
+
+}
+.socialcontent{
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.socialimg{
+    background-image: url(../images/logo-no-background.png);
+    width: 80%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socialicons{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.sociala{
+    color: rgb(36, 78, 112);
+}
+
+.socialist{
+    list-style: none;
+    margin-top: -40px;
+}
+
+.socialicons li{
+    display: inline-block;    
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.socialicons li:hover{
+    background-color: rgb(36, 78, 112);
+    border: 1px white solid;
+}
+.socialicons li:hover i{
+    color: white;
+}
